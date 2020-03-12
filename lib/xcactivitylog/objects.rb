@@ -255,7 +255,9 @@ module XCActivityLog
   class IDEActivityLogAnalyzerWarningMessage < IDEActivityLogMessage
     attributes.freeze
   end
-
+  class IDEActivityLogMajorGroupSection < IDEActivityLogSection
+    attributes.freeze
+  end
   class IDEActivityLogAnalyzerControlFlowStepEdge < SerializedObject
     attribute :start_location, :document_location
     attribute :end_location, :document_location
